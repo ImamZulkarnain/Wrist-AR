@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Quickstart project for DeepAR Web.",
   "main": "src/index.js",
+  "type": "module",
   "scripts": {
     "start": "node src/index.js",
     "build": "rm -rf dist && webpack --config webpack.config.js --mode production && cp -r public/* dist && cp -r node_modules/deepar dist/deepar-resources",
