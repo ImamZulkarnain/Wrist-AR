@@ -77,5 +77,5 @@ console.log("Deepar version: " + deepar.version);
     loadingSpinner.style.display = "none";
   };
 })();
-const port = 3000;
+const port = 5000;
 app.listen(process.env.PORT || port, () => console.log('Listening on port $(port)')) 
