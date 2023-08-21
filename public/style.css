@@ -17,8 +17,8 @@ body {
 #loading-screen,
 #permission-denied-screen,
 #permission-denied-background {
-  background-color: rgb(17 24 39 / 1);
-  background-image: url("./images/gradient.svg"), url("./images/bg-grid-dark.svg");
+  background-color: rgb(0, 0, 0);
+  /* background-image: url("./images/gradient.svg"), url("./images/bg-grid-dark.svg"); */
   background-repeat: no-repeat, repeat;
   display: flex;
   align-items: center;
