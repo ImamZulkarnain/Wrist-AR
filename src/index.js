@@ -2,7 +2,7 @@ import * as deepar from "deepar";
 import Carousel from "./carousel.js";
 
 // Log the version. Just in case.
-console.log("Deepar version: " + deepar.version);
+// console.log("Deepar version: " + deepar.version);
 
 // Top-level await is not supported.
 // So we wrap the whole code in an async function that is called immediatly.
@@ -17,21 +17,8 @@ console.log("Deepar version: " + deepar.version);
   // All the effects are in the public/effects folder.
   // Here we define the order of effect files.
   const effectList = [
-    "effects/ray-ban-wayfarer.deepar",
-    "effects/viking_helmet.deepar",
-    "effects/MakeupLook.deepar",
-    "effects/Split_View_Look.deepar",
-    "effects/flower_face.deepar",
-    "effects/Stallone.deepar",
-    "effects/galaxy_background_web.deepar",
-    "effects/Humanoid.deepar",
-    "effects/Neon_Devil_Horns.deepar",
-    "effects/Ping_Pong.deepar",
-    "effects/Pixel_Hearts.deepar",
-    "effects/Snail.deepar",
-    "effects/Hope.deepar",
-    "effects/Vendetta_Mask.deepar",
-    "effects/Fire_Effect.deepar",
+    "effects/WRISTI.deepar",
+    "effects/WristWatch.deepar"
   ];
 
   let deepAR = null;
@@ -39,7 +26,7 @@ console.log("Deepar version: " + deepar.version);
   // Initialize DeepAR with an effect file.
   try {
     deepAR = await deepar.initialize({
-      licenseKey: "your_license_key_goes_here",
+      licenseKey: "46db28c19b7ddbf9cc6240662fb5874702920d1621345690e064c0809cb36efd7705ed73a0f9b04d",
       previewElement,
       effect: effectList[0],
       // Removing the rootPath option will make DeepAR load the resources from the JSdelivr CDN,
@@ -48,7 +35,7 @@ console.log("Deepar version: " + deepar.version);
       rootPath: "./deepar-resources",
       additionalOptions: {
         cameraConfig: {
-          // facingMode: 'environment'  // uncomment this line to use the rear camera
+          facingMode: 'environment'  // uncomment this line to use the rear camera
         },
       },
     });
@@ -77,5 +64,3 @@ console.log("Deepar version: " + deepar.version);
     loadingSpinner.style.display = "none";
   };
 })();
-const port = 3000;
-app.listen(process.env.PORT || port, () => console.log('Listening on port $(port)')) 
