@@ -17,7 +17,7 @@ import Carousel from "./carousel.js";
   // All the effects are in the public/effects folder.
   // Here we define the order of effect files.
   const effectList = [
-    "effects/WRISTI.deepar",
+    // "effects/WRISTI.deepar",
     "effects/WristWatch.deepar"
   ];
 
