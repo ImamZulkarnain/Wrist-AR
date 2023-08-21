@@ -1,13 +1,11 @@
 {
-  "name": "wrist-ar",
+  "name": "quickstart-web-js-npm",
   "version": "1.0.0",
   "description": "Quickstart project for DeepAR Web.",
-  "main": "src/index.js",
-  "type": "module",
+  "main": "index.js",
   "scripts": {
-    "start": "node src/index.js",
     "build": "rm -rf dist && webpack --config webpack.config.js --mode production && cp -r public/* dist && cp -r node_modules/deepar dist/deepar-resources",
-    "dev": "webpack serve --mode development --open --port 3000"
+    "dev": "webpack serve --mode development --open --port 8888"
   },
   "author": "",
   "license": "MIT",
