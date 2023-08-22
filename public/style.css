@@ -43,8 +43,16 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 120px;
+  height: 140px;
   width: 100%;
+}
+
+.carousel.effect-title-container{
+  top: -43%;
+}
+#effect-title {
+  color:            white;
+  text-shadow:      2px 2px black;
 }
 
 .carousel.active {
