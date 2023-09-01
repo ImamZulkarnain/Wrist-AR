@@ -17,7 +17,7 @@ import Carousel from "./carousel.js";
   // All the effects are in the public/effects folder.
   // Here we define the order of effect files.
   const effectList = [
-    // "effects/WRISTI.deepar",
+    "effects/WRISTI.deepar",
     "effects/WristWatch.deepar"
   ];
 
@@ -26,7 +26,7 @@ import Carousel from "./carousel.js";
   // Initialize DeepAR with an effect file.
   try {
     deepAR = await deepar.initialize({
-      licenseKey: "46db28c19b7ddbf9cc6240662fb5874702920d1621345690e064c0809cb36efd7705ed73a0f9b04d",
+      licenseKey: "f12e64d92ac630159b821d6a10d30317d9fac486eebc7aaf6a571a014b6b354e188dd3d86ca935ba",
       previewElement,
       effect: effectList[0],
       // Removing the rootPath option will make DeepAR load the resources from the JSdelivr CDN,
